@@ -1,2 +1,4 @@
-spring.mvc.request-parameter-logging-filter.enabled: true
-spring.mvc.request-parameter-logging-filter.level: DEBUG
+spring.mvc.request-parameter-logging-filter:
+  enabled: true
+  level: DEBUG
+logging.level.com.parfait.study.autoconfigure.logging.filter.RequestParameterLoggingFilter: ${spring.mvc.request-parameter-logging-filter.level}
